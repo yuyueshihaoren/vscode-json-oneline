@@ -1,47 +1,51 @@
 {
-    "name": "json-oneline",
-    "displayName": "JSON in One Line",
-    "description": "Print the stingified parsed JSON from selected",
-    "version": "0.0.1",
-    "publisher": "Yue Yu",
-    "private": true,
-    "license": "MIT",
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/yuyueshihaoren/vscode-json-oneline/"
-    },
-    "engines": {
-        "vscode": "^1.32.0"
-    },
-    "categories": [
-        "Formatters",
-        "Other"
-    ],
-    "activationEvents": [
-        "onCommand:extension.convertToOneLine"
-    ],
-    "main": "./out/extension",
-    "contributes": {
-        "commands": [
-            {
-                "command": "extension.convertToOneLine",
-                "title": "Convert to Oneline",
-                "category": "JSON"
-            }
-        ]
-    },
-    "scripts": {
-        "vscode:prepublish": "npm run compile",
-        "compile": "tsc -p ./",
-        "lint": "eslint . --ext .ts,.tsx",
-        "watch": "tsc -watch -p ./"
-    },
-    "devDependencies": {
-        "@types/node": "^16.11.7",
-        "@types/vscode": "^1.32.0",
-        "@typescript-eslint/eslint-plugin": "^5.19.0",
-        "@typescript-eslint/parser": "^5.19.0",
-        "eslint": "^8.13.0",
-        "typescript": "^4.7.2"
-    }
+  "name": "json-oneline",
+  "displayName": "JSON in One Line",
+  "description": "Convert selected text to stringified JSON, in one line.",
+  "version": "0.0.2",
+  "publisher": "YueYu",
+  "author": {
+    "email": "yuyueshihaoren@gmail.com",
+    "name": "Yue Yu"
+  },
+  "private": true,
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yuyueshihaoren/vscode-json-oneline/"
+  },
+  "engines": {
+    "vscode": "^1.32.0"
+  },
+  "categories": [
+    "Formatters",
+    "Other"
+  ],
+  "activationEvents": [
+    "onCommand:extension.convertToOneLine"
+  ],
+  "main": "./out/extension",
+  "contributes": {
+    "commands": [
+      {
+        "command": "extension.convertToOneLine",
+        "title": "Convert to Oneline",
+        "category": "JSON"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "lint": "eslint . --ext .ts,.tsx",
+    "watch": "tsc -watch -p ./"
+  },
+  "devDependencies": {
+    "@types/node": "^16.11.7",
+    "@types/vscode": "^1.32.0",
+    "@typescript-eslint/eslint-plugin": "^5.19.0",
+    "@typescript-eslint/parser": "^5.19.0",
+    "eslint": "^8.13.0",
+    "typescript": "^4.7.2"
+  }
 }
